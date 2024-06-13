@@ -1,2 +1,2 @@
 # 십이장기
-![image](https://github.com/GAMZAMANDU/12chessBot/assets/157395300/b64a2ca8-b29c-421e-b030-dd677b205497)
+![image](https://cdn.discordapp.com/attachments/1191707421165490216/1250827842124517426/1147886879623098462I1147886879623098462.png?ex=666c5bb4&is=666b0a34&hm=bd947e42115ccfac1c95256155f90a884414aae0dcf4fb1e21ec4ef7969b9fc3&)
