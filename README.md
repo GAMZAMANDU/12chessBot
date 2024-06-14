@@ -15,4 +15,4 @@ main.py 마지막 부분에 봇 토큰 넣고 실행하면 작동합니다.
 
 생성된 스레드에서 버튼을 누르며 경기 가능합니다
 
-![image]((https://cdn.discordapp.com/attachments/1191012757932363808/1250996795455311883/2024-06-14_11.12.21.png?ex=666cf90e&is=666ba78e&hm=f4c3d09aadd8d9533d6dee47a439509b47d076e6cef48111efd327f914ed38e4&)
+![image](https://cdn.discordapp.com/attachments/1191012757932363808/1250996795455311883/2024-06-14_11.12.21.png?ex=666cf90e&is=666ba78e&hm=f4c3d09aadd8d9533d6dee47a439509b47d076e6cef48111efd327f914ed38e4&)
