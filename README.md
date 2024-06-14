@@ -7,8 +7,14 @@
 십이장기 룰 참고 [바로가기](https://namu.wiki/w/%EC%8B%AD%EC%9D%B4%EC%9E%A5%EA%B8%B0)<br>
 안내) 방 여러개 동시에 하면 꼬입니다
 
-# 사용방법
+# 봇 사용안내
+
+![image](https://github.com/GAMZAMANDU/12chessBot/assets/157395300/b75c141d-ccdb-47a7-afa7-6dc6164aac81) 
+봇아이디와 이미지업로드용 채널ID가 필요합니다.
 main.py 마지막 부분에 봇 토큰 넣고 실행하면 작동합니다.
+
+
+# 사용방법
 `!십이장기 @유저멘션`으로 게임 가능합니다
 
 <img src="https://cdn.discordapp.com/attachments/1191012757932363808/1250996795157381180/2024-06-14_11.11.16.png?ex=666cf90e&is=666ba78e&hm=7a779bb30d31d2aa9f7b4f034277742fd40e4de476dc19a81c814e0572687b26&" width="50%">
