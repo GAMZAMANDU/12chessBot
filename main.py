@@ -12,8 +12,8 @@ from discord import app_commands, Interaction, Object
 from discord.ui import Button, View
 from discord import ButtonStyle
 
-BotID = 1183419161507008522
-ImageSendChnnel = 1191707421165490216
+BotID = "봇아이디를 넣으세요"
+ImageSendChnnel = "이미지업로드용 채널 하나가 필요해요"
 
 # 개별 게임 생성 클래스.
 
