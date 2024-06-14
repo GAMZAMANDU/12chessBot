@@ -12,6 +12,9 @@ from discord import app_commands, Interaction, Object
 from discord.ui import Button, View
 from discord import ButtonStyle
 
+BotID = 1183419161507008522
+ImageSendChnnel = 1191707421165490216
+
 # 개별 게임 생성 클래스.
 
 x_axis = {1: 'a', 2: 'b', 3: 'c'}
@@ -281,8 +284,8 @@ async def make_twelve_chess(ctx, counter_user='bot', time=90):
                     file = discord.File(file_path, filename=file_path)
 
                     # 파일 업로드 메시지 전송
-                    # uploaded_file_channel = client.get_channel(1191707421165490216)
-                    uploaded_file = await client.get_channel(1191707421165490216).send(file=file)
+
+                    uploaded_file = await client.get_channel(ImageSendChnnel).send(file=file)
 
                     # 업로드된 파일의 URL을 얻기
                     file_url = uploaded_file.attachments[0].url
@@ -318,7 +321,7 @@ async def make_twelve_chess(ctx, counter_user='bot', time=90):
 
                     def check(message):
                         # 특정 조건에 맞는 메시지인지 확인
-                        return int(message.author.id) == 1183419161507008522 and message.channel == thread and (message.content == '―― 착수 완료! ――' or message.content == '―― 항복 선언! ――')
+                        return int(message.author.id) == BotID and message.channel == thread and (message.content == '―― 착수 완료! ――' or message.content == '―― 항복 선언! ――')
                     try:
                         # ―― 착수 완료! ――라는 메시지를 기다림 (5초 동안)
                         response = await client.wait_for('message', check=check, timeout=time)
@@ -460,7 +463,7 @@ class Pick1(discord.ui.View):
             for col_index, label in enumerate(row_labels, start=1):
                 # 버튼의 행과 열을 2차원 리스트의 인덱스로 지정
                 btn = (discord.ui.Button(label=' '*row_index*col_index, style=discord.ButtonStyle.red,
-                                        emoji=f"<:emoji_name:{tile_emoji[class_name.map_data[row_index][x_axis[col_index]]]}> ", row=row_index, custom_id=f"Pi1{row_index}{x_axis[col_index]}"))
+                                         emoji=f"<:emoji_name:{tile_emoji[class_name.map_data[row_index][x_axis[col_index]]]}> ", row=row_index, custom_id=f"Pi1{row_index}{x_axis[col_index]}"))
                 if row_index == 1:
                     btn.style = discord.ButtonStyle.red
                 elif row_index == 2 or row_index == 3:
@@ -673,9 +676,6 @@ async def on_interaction(interaction: discord.Interaction):
         coordinate = f"{x_axis[int(btn_data[0:1])]}{btn_data[1:]}"
         await interaction.response.send_message(coordinate)
 # ㅡㅡㅡㅡ'''
-
-
-
 
 
 client.run('토큰을 넣으세요')
